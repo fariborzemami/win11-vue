@@ -49,13 +49,13 @@ export default {
             let iconTheme = this.darkMode ? 'light' : 'dark'
             return [
                 { name: 'start', icon: 'start', action: this.toggleStartMenu },
-                { name: 'search', icon: 'search-' + iconTheme, action: this.none },
-                { name: 'widget', icon: 'widget', action: this.none },
-                { name: 'settings', icon: 'settings', action: this.none },
-                { name: 'explorer', icon: 'explorer', action: this.none },
-                { name: 'edge', icon: 'edge', action: this.none },
-                { name: 'store', icon: 'store-' + iconTheme, action: this.none },
-                { name: 'vscode', icon: 'vscode', action: this.none },
+                { name: 'search', icon: 'search-' + iconTheme, action: this.none }
+                // { name: 'widget', icon: 'widget', action: this.none },
+                // { name: 'settings', icon: 'settings', action: this.none },
+                // { name: 'explorer', icon: 'explorer', action: this.none },
+                // { name: 'edge', icon: 'edge', action: this.none },
+                // { name: 'store', icon: 'store-' + iconTheme, action: this.none },
+                // { name: 'vscode', icon: 'vscode', action: this.none },
             ]
         }
     },

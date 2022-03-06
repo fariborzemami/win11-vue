@@ -68,9 +68,9 @@ export default {
             let items = [
                 { label: 'This PC', icon: 'computer' },
                 { label: 'Recycle Bin', icon: 'trash-empty' },
-                { label: 'File Explorer', icon: 'explorer' },
-                { label: 'Microsoft Store', icon: 'store-' + this.iconTheme },
-                { label: 'Microsoft Edge', icon: 'edge' }
+                // { label: 'File Explorer', icon: 'explorer' },
+                // { label: 'Microsoft Store', icon: 'store-' + this.iconTheme },
+                // { label: 'Microsoft Edge', icon: 'edge' }
             ]
 
             for (let i = 0; i < items.length; i++) {

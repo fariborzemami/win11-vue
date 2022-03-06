@@ -49,8 +49,14 @@
 
         <div class="bg-black bg-opacity-5 dark:bg-opacity-10 px-12 py-4">
             <div class="user flex items-center gap-2">
-                <img src="@/assets/bilal-bentoumi.jpg" class="rounded-full" width="26"/>
-                <span class="text-2xs text-gray-800 dark:text-gray-300">Bilal Bentoumi</span>
+                <img 
+                  :src="profile.image"
+                  class="rounded-full"
+                  width="26"
+                />
+                <span class="text-2xs text-gray-800 dark:text-gray-300">
+                    {{ profile.name }}
+                </span>
                 <div class="flex-grow"></div>
                 <img src="@/assets/ui/power.png" class="rounded-full" :class="{ 'filter invert': !darkMode }" width="14"/>
             </div>
@@ -72,33 +78,36 @@ export default {
     },
     data() {
         return {
-
+            profile: {
+                image: 'https://media-exp1.licdn.com/dms/image/C4D03AQE3cEQYf5-dLQ/profile-displayphoto-shrink_200_200/0/1605566183130?e=1649894400&v=beta&t=rcoFHmPXtP4TgU8TddL4vRLH23KwtRJR0g5Wc_RdgiE',
+                name: 'فریبرز امامی'
+            },
             apps: [
-                { label: 'Edge', icon: require('@/assets/icons/edge.png'), active: false, click: this.none },
-                { label: 'Word', icon: require('@/assets/icons/word.png'), active: false, click: this.none },
-                { label: 'PowerPoint', icon: require('@/assets/icons/powerpoint.png'), active: false, click: this.none },
-                { label: 'OneNote', icon: require('@/assets/icons/onenote.png'), active: false, click: this.none },
-                { label: 'Mail', icon: require('@/assets/icons/mail.png'), active: false, click: this.none },
-                { label: 'To Do', icon: require('@/assets/icons/todo.png'), active: false, click: this.none },
-                { label: 'Store', icon: require('@/assets/icons/store-dark.png'), active: false, click: this.none },
-                { label: 'Photos', icon: require('@/assets/icons/photos.png'), active: false, click: this.none },
-                { label: 'Your Phone', icon: require('@/assets/icons/your-phone.png'), active: false, click: this.none },
-                { label: 'Notepad', icon: require('@/assets/icons/notepad.png'), active: false, click: this.none },
-                { label: 'Calculator', icon: require('@/assets/icons/calculator.png'), active: false, click: this.none },
+                // { label: 'Edge', icon: require('@/assets/icons/edge.png'), active: false, click: this.none },
+                // { label: 'Word', icon: require('@/assets/icons/word.png'), active: false, click: this.none },
+                // { label: 'PowerPoint', icon: require('@/assets/icons/powerpoint.png'), active: false, click: this.none },
+                // { label: 'OneNote', icon: require('@/assets/icons/onenote.png'), active: false, click: this.none },
+                // { label: 'Mail', icon: require('@/assets/icons/mail.png'), active: false, click: this.none },
+                // { label: 'To Do', icon: require('@/assets/icons/todo.png'), active: false, click: this.none },
+                // { label: 'Store', icon: require('@/assets/icons/store-dark.png'), active: false, click: this.none },
+                // { label: 'Photos', icon: require('@/assets/icons/photos.png'), active: false, click: this.none },
+                // { label: 'Your Phone', icon: require('@/assets/icons/your-phone.png'), active: false, click: this.none },
+                // { label: 'Notepad', icon: require('@/assets/icons/notepad.png'), active: false, click: this.none },
+                // { label: 'Calculator', icon: require('@/assets/icons/calculator.png'), active: false, click: this.none },
                 { label: 'Spotify', icon: require('@/assets/icons/spotify.png'), active: false, click: this.none },
-                { label: 'VS Code', icon: require('@/assets/icons/vscode.png'), active: false, click: this.none },
-                { label: 'Terminal', icon: require('@/assets/icons/terminal.png'), active: false, click: this.none },
-                { label: 'Github', icon: require('@/assets/icons/github.png'), active: false, click: this.none },
-                { label: 'Discord', icon: require('@/assets/icons/discord.png'), active: false, click: this.none },
+                // { label: 'VS Code', icon: require('@/assets/icons/vscode.png'), active: false, click: this.none },
+                // { label: 'Terminal', icon: require('@/assets/icons/terminal.png'), active: false, click: this.none },
+                // { label: 'Github', icon: require('@/assets/icons/github.png'), active: false, click: this.none },
+                // { label: 'Discord', icon: require('@/assets/icons/discord.png'), active: false, click: this.none },
             ],
 
             recommendedApps: [
                 { label: 'Edge', subLabel: '17min ago', icon: require('@/assets/icons/edge.png'), active: false, click: this.none },
-                { label: 'Word', subLabel: '1h ago', icon: require('@/assets/icons/word.png'), active: false, click: this.none },
-                { label: 'Mail', subLabel: '12h ago', icon: require('@/assets/icons/mail.png'), active: false, click: this.none },
+                // { label: 'Word', subLabel: '1h ago', icon: require('@/assets/icons/word.png'), active: false, click: this.none },
+                // { label: 'Mail', subLabel: '12h ago', icon: require('@/assets/icons/mail.png'), active: false, click: this.none },
                 { label: 'Terminal', subLabel: '1h ago', icon: require('@/assets/icons/terminal.png'), active: false, click: this.none },
-                { label: 'VS Code', subLabel: 'Yesterday at 4:24 PM', icon: require('@/assets/icons/vscode.png'), active: false, click: this.none },
-                { label: 'Photos', subLabel: 'Last week', icon: require('@/assets/icons/photos.png'), active: false, click: this.none },
+                // { label: 'VS Code', subLabel: 'Yesterday at 4:24 PM', icon: require('@/assets/icons/vscode.png'), active: false, click: this.none },
+                // { label: 'Photos', subLabel: 'Last week', icon: require('@/assets/icons/photos.png'), active: false, click: this.none },
             ]
 
         }
