@@ -33,7 +33,10 @@
 </template>
 
 <script>
-import moment from 'moment'
+import moment from "moment-jalaali"
+import fa from "moment/src/locale/fa"
+moment.locale("fa", fa)
+moment.loadPersian({ dialect: 'persian-modern', usePersianDigits: true })
 import {mapState} from 'vuex'
 
 export default {
@@ -64,7 +67,7 @@ export default {
     methods: {
         updateTime() {
             this.today = {
-                date: moment().format('MM/D/YYYY'),
+                date: moment().format('jYYYY/jM/jD'),
                 time: moment().format('hh:mm A')
             }
         },
