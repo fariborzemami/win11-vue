@@ -11,7 +11,9 @@
     "
     :class="{ show: isOpen }"
   >
-    <div class="mb-1 flex flex-col text-2xs p-3 text-gray-600 dark:text-gray-200">
+    <div
+      :class="darkMode ? 'border border-gray-700' : 'border-t border-b border-gray-300'"
+      class="flex flex-col text-2xs p-3 text-gray-600 dark:text-gray-200">
       <p class="text-right pt-1">
         Manage notifications
       </p>
